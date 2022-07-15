@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora Basica</h1>
+    <div id="calculadora">
+        <div id="corpo">
+            <div>
+                <input type="text" name="n1">
+                <input type="text" name="n2"> =
+                <div id="res">?</div>
+            </div>
+            <form action="botoes" class="botoes">
+                <abbr title="Soma"><input class="botao" type="button" value="+" onclick="soma()"></abbr>
+                <abbr title="Subtração"><input class="botao" type="button" value="-" onclick="subtracao()"></abbr>
+                <abbr title="Divisão"><input class="botao" type="button" value="/" onclick="divisao()"></abbr>
+                <abbr title="Multiplicação"><input class="botao" type="button" value="x" onclick="multiplicacao()"></abbr>
+            </form>
+        </div>
+    </div>
+
+    <script>
+     
+        function soma(){
+            var n1 = document.getElementsByName('n1')[0]
+            var n2 = document.getElementsByName('n2')[0]
+            var res = document.getElementById('res')
+            res.innerHTML = `  ${Number(n1.value) + Number(n2.value)}`
+        }
+        function multiplicacao(){
+            var n1 = document.getElementsByName('n1')[0]
+            var n2 = document.getElementsByName('n2')[0]
+            var res = document.getElementById('res')
+            res.innerHTML = `${Number(n1.value) * Number(n2.value)} `
+        }
+        function divisao(){
+            var n1 = document.getElementsByName('n1')[0]
+            var n2 = document.getElementsByName('n2')[0]
+            var res = document.getElementById('res')
+            res.innerHTML = `${Number(n1.value) / Number(n2.value)}`
+        }
+        function subtracao(){
+            var n1 = document.getElementsByName('n1')[0]
+            var n2 = document.getElementsByName('n2')[0]
+            var res = document.getElementById('res')
+
+            res.innerHTML = `${Number(n1.value) - Number(n2.value)}`
+        }
+    </script>
+</body>
+</html>

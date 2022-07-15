@@ -1,0 +1,68 @@
+body{
+    font: normal 13pt Arial;
+    background-color: rgb(147, 74, 216);
+}
+body h1{
+    text-align: center;
+}
+div{
+    margin: auto;
+    padding: auto;
+
+}
+div div div{
+    display: flex;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+
+}
+div#calculadora div#corpo{
+    padding: auto;
+    margin: auto;
+    width: auto;
+    height: 200px;
+    border: 7px red solid;
+}
+div div#res{
+    background-color: white;
+    color: black;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    text-justify: inherit;
+    align-items: center;
+}
+div#calculadora{
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    color: white;
+    border: 10px black solid;
+}
+div#calculadora input{
+    display: flex;
+    padding: auto;
+    margin: auto;
+    width: 100px;
+    height: 20px;
+}
+div#calculadora form{
+    display: flex;
+}
+div#calculadora form.botoes input{
+    display: block;
+    padding: 1px;
+    margin: 1px;
+    width: 50px;
+    height: 30px;
+}
+.botao{
+    background-color: rgba(129, 8, 241, 0.644);
+    color: yellow;
+}
+.botao:hover{
+    transform: scale(1.1);
+    transition-delay: 50ms;
+}
